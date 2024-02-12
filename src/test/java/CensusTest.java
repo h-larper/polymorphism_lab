@@ -14,7 +14,9 @@ public class CensusTest {
 
     @Test
     public void canCountBuildings() {
-        assertThat(census.countBuildings()).isEqualTo(0);
+        Building building = new Cottage (4, 1880, false, 20, true, 5);
+        census.addBuilding(building);
+        assertThat(census.countBuildings()).isEqualTo(1);
     }
 
     @Test

@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Census {
 
-    private ArrayList<Building> buildings;
+    private ArrayList<Building> buildings;                  // declaring ArrayList from Building
     public Census(){
-        this.buildings = new ArrayList<>();
+        this.buildings = new ArrayList<>();                     // initialising ArrayList
     }
 
     public ArrayList<Building> getBuildings() {
