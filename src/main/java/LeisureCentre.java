@@ -2,6 +2,8 @@ import java.util.ArrayList;
 
 public class LeisureCentre extends Building {
 
+    Equipment equipment;
+
     private String typeOfPool;
     private int numberOfShowers;
     private ArrayList<Equipment>;
