@@ -16,6 +16,7 @@ public abstract class Building {
         return 2024-this.yearOfConstruction;
     }
 
+
     public abstract String welcome();
 
 }

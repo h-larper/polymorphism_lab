@@ -17,4 +17,9 @@ public class MotorHomeTest {
         assertThat(motorhome.calculateDevaluation(1500, 2000)).isEqualTo(500);
     }
 
+    @Test
+    public void canCalculateAge(){
+        assertThat(motorhome.calculateAge(1993)).isEqualTo(31);
+    }
+
 }

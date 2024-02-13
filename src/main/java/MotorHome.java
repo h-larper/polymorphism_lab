@@ -1,4 +1,6 @@
-public class MotorHome {
+import interfaces.ICalculate;
+
+public class MotorHome implements ICalculate {
 
     private String name;
     private int yearOfManufacture;
@@ -8,6 +10,11 @@ public class MotorHome {
         this.name = name;
         this.yearOfManufacture = yearOfManufacture;
         this.licensePlate = licensePlate;
+    }
+
+    public int calculateAge(int age) {
+        age = 2024 - yearOfManufacture;
+        return age;
     }
 
     public int calculateDevaluation(int current, int original) {
