@@ -1,6 +1,5 @@
 public class Cottage extends Building {
 
-    private String name;
     private int sizeOfGarden;
     private boolean listedStatus;
     private int numberOfLogsOnFire;
@@ -10,6 +9,7 @@ public class Cottage extends Building {
         this.sizeOfGarden = sizeOfGarden;
         this.numberOfLogsOnFire = numberOfLogsOnFire;
     }
+
 
     public String welcome(){
         return "Welcome to " + this.name;

@@ -1,6 +1,6 @@
 public abstract class Building {
 
-    private String name;
+    protected String name;                                  // need protected here or would've needed getter to share name property with subclasses
     private int numberOfRooms;
     private int yearOfConstruction;
     private boolean doubleGlazed;
