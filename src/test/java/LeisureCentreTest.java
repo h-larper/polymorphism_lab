@@ -9,7 +9,12 @@ public class LeisureCentreTest {
 
     @BeforeEach
     public void setUp() {
-        leisureCentre = new LeisureCentre(15, 1995, true, "infinity", 30);
+        leisureCentre = new LeisureCentre("Healthy Habits", 15, 1995, true, "infinity", 30);
+    }
+
+    @Test
+    public void canWelcome() {
+        assertThat(leisureCentre.welcome()).isEqualTo("Welcome to Healthy Habits");
     }
 
     @Test

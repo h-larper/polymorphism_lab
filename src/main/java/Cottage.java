@@ -1,13 +1,18 @@
 public class Cottage extends Building {
 
+    private String name;
     private int sizeOfGarden;
     private boolean listedStatus;
     private int numberOfLogsOnFire;
 
-    public Cottage(int numberOfRooms, int yearOfConstruction, boolean doubleGlazed, int sizeOfGarden, boolean listedStatus, int numberOfLogsOnFire) {
-        super(numberOfRooms, yearOfConstruction, doubleGlazed);
+    public Cottage(String name, int numberOfRooms, int yearOfConstruction, boolean doubleGlazed, int sizeOfGarden, boolean listedStatus, int numberOfLogsOnFire) {
+        super(name, numberOfRooms, yearOfConstruction, doubleGlazed);
         this.sizeOfGarden = sizeOfGarden;
         this.numberOfLogsOnFire = numberOfLogsOnFire;
+    }
+
+    public String welcome(){
+        return "Welcome to " + this.name;
     }
 
     public int increaseSizeOfGarden() {

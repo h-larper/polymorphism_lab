@@ -9,7 +9,12 @@ public class CottageTest {
 
     @BeforeEach
     public void setUp() {
-        cottage = new Cottage(4, 1880, false, 20, true, 5);
+        cottage = new Cottage("Cosy", 4, 1880, false, 20, true, 5);
+    }
+
+    @Test
+    public void canWelcome() {
+        assertThat(cottage.welcome()).isEqualTo("Welcome to Cosy");
     }
 
     @Test

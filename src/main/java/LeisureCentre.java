@@ -3,24 +3,21 @@ import java.util.ArrayList;
 public class LeisureCentre extends Building {
 
 
+   private String name;
     private String typeOfPool;
     private int numberOfShowers;
 //    private ArrayList<String> equipment;
 
-    public LeisureCentre(int numberOfRooms, int yearOfConstruction, boolean doubleGlazed,String typeOfPool,int numberOfShowers) {
-        super(numberOfRooms, yearOfConstruction, doubleGlazed);
+    public LeisureCentre(String name, int numberOfRooms, int yearOfConstruction, boolean doubleGlazed,String typeOfPool,int numberOfShowers) {
+        super(name, numberOfRooms, yearOfConstruction, doubleGlazed);
         this.typeOfPool = typeOfPool;
         this.numberOfShowers = numberOfShowers;
-//        this.equipment = new ArrayList<>();                 // typically initialised empty
     }
 
-//    public void addEquipment(String equipment) {
-//        this.equipment.add(equipment);
-//    }
+    public String welcome() {
+        return "Welcome to " + name;
+    }
 
-//    public ArrayList<String> getEquipment(int i) {
-//        return equipment;
-//    }
 
     public int getNumberOfShowers() {
         return this.numberOfShowers;
