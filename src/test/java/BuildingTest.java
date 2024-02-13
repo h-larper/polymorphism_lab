@@ -14,7 +14,7 @@ public class BuildingTest {
 
 //    @Test
 //    public void canCalculateBuildingAge(){
-//        assertThat(building.buildingAge()).isEqualTo(41);
+//        assertThat(building.calculateAge()).isEqualTo(41);
 //    }
 
 

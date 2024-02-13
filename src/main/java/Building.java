@@ -10,7 +10,7 @@ public abstract class Building {
         this.doubleGlazed = doubleGlazed;
     }
 
-    public int buildingAge() {
+    public int calculateAge() {
         return 2024-this.yearOfConstruction;
     }
 
